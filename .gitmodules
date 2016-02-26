@@ -1,0 +1,3 @@
+[submodule "bookshelf_mongo_api"]
+	path = bookshelf_mongo_api
+	url = https://github.com/duskyshelf/bookshelf_mongo_api
