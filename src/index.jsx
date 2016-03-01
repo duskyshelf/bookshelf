@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import BookList from './components/BookList';
 
-const pair = ['Trainspotting', '28 Days Later'];
+const books = ['Catch 22', 'Lord of the Rings'];
 
 ReactDOM.render(
   <BookList books={books} />,
