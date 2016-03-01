@@ -7,7 +7,7 @@ export default React.createClass({
   render: function() {
     return <ul className="list">
       {this.getBookList().map(book =>
-        <li>
+        <li style={{"list-style-type": "none"}}>
           <button key={book}>
             <h1>{book}</h1>
           </button>
