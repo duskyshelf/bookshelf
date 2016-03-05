@@ -19,5 +19,4 @@ describe('BookList', () => {
     expect(buttons[0].textContent).to.equal('Catch 22');
     expect(buttons[1].textContent).to.equal('Lord of the Rings');
   });
-
 });

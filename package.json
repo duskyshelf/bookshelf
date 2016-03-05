@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js 'test/**/*.@(js|jsx)'",
     "test:watch": "npm run test -- --watch",
-    "build": "git submodule update --init --recursive" 
+    "build": "git submodule update --init --recursive"
   },
   "keywords": [],
   "author": "",
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "immutable": "^3.7.6",
+    "isomorphic-fetch": "^2.2.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
   }
