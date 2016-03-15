@@ -5,6 +5,6 @@ import BookList from './components/BookList';
 const books = ['Catch 22', 'Lord of the Rings', 'The Shining'];
 
 ReactDOM.render(
-  <BookList books={books} />,
+  <BookList books={ books } />,
   document.getElementById('app')
 );

@@ -1,4 +1,4 @@
-import fetch from 'isomorphic-fetch';
+import { fetch } from 'isomorphic-fetch';
 export const RECEIVE_BOOKS = 'RECEIVE_BOOKS';
 
 export function fetchBooks() {
