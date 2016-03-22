@@ -7,7 +7,8 @@
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js 'test/**/*.@(js|jsx)'",
     "test:watch": "npm run test -- --watch",
     "build": "git submodule update --init --recursive",
-    "gogogo": "webpack-dev-server"
+    "update-submodules": "git submodule update --remote --merge",
+    "server": "webpack-dev-server"
   },
   "keywords": [],
   "author": "",
