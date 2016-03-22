@@ -6,7 +6,7 @@ export default function booksCollection(state = Map(), action) {
     case RECEIVE_BOOKS:
       return state.merge({ books: action.books });
     case 'SET_STATE':
-      return state.merge(action.state);
+      return action.state
     default:
       return state;
   }
