@@ -1,10 +1,20 @@
-import React from 'react';
+import { createStore } from 'redux'
+import { fetchBooks } from './actions/APIActions'
+import { Provider } from 'react-redux'
+import BookList from './components/BookList'
+import reducer from './reducers/reducer'
+import { Map } from 'immutable'
 import ReactDOM from 'react-dom';
-import BookList from './components/BookList';
+import React from 'react'
 
-const books = ['Catch 22', 'Lord of the Rings', 'The Shining'];
+const store = createStore(reducer);
+
+store.dispatch({
+  type: 'SET_STATE',
+  state: Map({ books: ['A Killing Joke', 'The Dark Knight Returns', 'The Long Halloween'] })
+});
 
 ReactDOM.render(
-  <BookList books={ books } />,
+  <BookList books={ store.getState().toJS().books }/>,
   document.getElementById('app')
 );

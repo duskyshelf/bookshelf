@@ -2,7 +2,7 @@ import React from 'react';
 
 export default React.createClass({
   getBookList: function() {
-    return this.props.books || [];
+    return this.props.books || [ "test" ];
   },
   render: function() {
     return <ul className="list">
