@@ -16,6 +16,22 @@
 // ReactDOM.render(
 //   <Provider store={store}>
 //     <BookList />
-//   </Provider>
+//   </Provider§
 //   document.getElementById('app')
 // );
+
+
+
+import { createStore, applyMiddleware } from 'redux'
+import thunkMiddleware from 'redux-thunk'
+import rootReducer from '../reducers/reducer'
+
+export default function configureStore(initialState) {
+  return createStore(
+    rootReducer,
+    initialState,
+    applyMiddleware(
+      thunkMiddleware
+    )
+  )
+}
