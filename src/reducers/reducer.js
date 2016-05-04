@@ -6,18 +6,15 @@ function booksCollection(state = { isFetching: false, books: [] }, action) {
   switch (action.type) {
     case REQUEST_BOOKS:
       console.log("request books action")
-      return state.merge({
+      return Object.assign({}, state, {
         isFetching: true
       })
     case RECEIVE_BOOKS:
       console.log("receive books action")
-      return state.merge({
-        books: action.books,
+      return Object.assign({}, state, {
+        books: action.books.books,
         isFetching: false
       })
-    case 'SET_STATE':
-      console.log("set state action")
-      return action.state
     default:
       return state;
   }

@@ -31,21 +31,21 @@ class Async extends Component {
   }
 
   render() {
-    console.log("tried to render", this.props)
     const { books, isFetching } = this.props
     return (
       <div>
         <div>
           <a href='#' onClick={this.handleRefreshClick}> Refresh </a>
         </div>
-        {isFetching && books.length === 0 &&
+        { isFetching && books.length === 0 &&
           <h2>Loading...</h2>
         }
-        {!isFetching && books.length === 0 &&
+        { !isFetching && books.length === 0 &&
           <h2>Empty.</h2>
         }
-        {books.length > 0 &&
+        { books.length > 0 &&
           <div>
+            Booklist
             <BookList books={ books } />
           </div>
         }
