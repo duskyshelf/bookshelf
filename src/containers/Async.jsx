@@ -6,7 +6,7 @@ import BookList from '../components/BookList'
 class Async extends Component {
   constructor(props) {
     super(props)
-    this.handleChange = this.handleChange.bind(this)
+    // this.handleChange = this.handleChange.bind(this)
     this.handleRefreshClick = this.handleRefreshClick.bind(this)
   }
 
@@ -20,8 +20,8 @@ class Async extends Component {
     dispatch(fetchBooks())
   }
 
-  handleChange() {
-  }
+  // handleChange() {
+  // }
 
   handleRefreshClick(e) {
     e.preventDefault()

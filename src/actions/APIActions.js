@@ -15,7 +15,7 @@ export function fetchBooks() {
 function receiveBooks(json) {
   return {
     type: RECEIVE_BOOKS,
-    books: json,
+    data: json,
     isFetching: false
   }
 }

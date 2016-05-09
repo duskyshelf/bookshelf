@@ -8,7 +8,10 @@
     "test:watch": "npm run test -- --watch",
     "build": "git submodule update --init --recursive",
     "update-submodules": "git submodule update --remote --merge",
-    "server": "webpack-dev-server"
+    "server": "webpack-dev-server",
+    "database": "node ./bookshelf_mongo_api/app.js",
+    "seeddb": "mongoimport --db=bookshelf --collection=books --type=json --jsonArray ./bookshelf_mongo_api/mongoseeds/books.json",
+    "dropdb": "mongo bookshelf --eval 'db.dropDatabase()'"
   },
   "keywords": [],
   "author": "",

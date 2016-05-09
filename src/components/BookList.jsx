@@ -21,7 +21,6 @@ import React, { PropTypes, Component } from 'react'
 export default class BookList extends Component {
   render() {
     return (
-      console.log(this.props.books[0]),
       <ul>
         {this.props.books.map((book, i) =>
           <li key={i}>{book.title}</li>

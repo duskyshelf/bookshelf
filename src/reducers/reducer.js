@@ -12,7 +12,7 @@ function booksCollection(state = { isFetching: false, books: [] }, action) {
     case RECEIVE_BOOKS:
       console.log("receive books action")
       return Object.assign({}, state, {
-        books: action.books.books,
+        books: action.data.books,
         isFetching: false
       })
     default:
